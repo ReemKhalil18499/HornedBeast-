@@ -2,17 +2,17 @@ import React from 'react';
 
 
 class Footer extends React.Component {
-    
-    render() { 
-        return (           
-             
-               <h1>Reem Khalil</h1>
-             
+
+  render() {
+    return (
+
+      <h1>Reem Khalil</h1>
 
 
-        )
-      }
-    }
+
+    );
+  }
+}
 
 
-  export default Footer;
+export default Footer;

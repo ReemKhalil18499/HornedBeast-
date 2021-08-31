@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   handleClose = () => {
-    this.setState({ show: !this.state.show });
+    this.setState({ show: false });
   };
 
   render() {

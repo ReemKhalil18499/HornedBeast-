@@ -24,8 +24,9 @@ class App extends React.Component {
         <Header />
         <Main data={dataJson} />
         <Footer />
-        <SelectedBeast show={this.state.show} />
-        <HornedBeasts handleClose={this.handleClose} />
+        <SelectedBeast show={this.state.show}  />
+        
+        
       </div>
     );
   }

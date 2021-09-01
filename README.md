@@ -1,3 +1,151 @@
+# Class Lab 01 
+
+Number and name of feature: Display images 
+
+Estimate of time needed to complete: 1 hour 
+
+Start time: 12:30 pm
+
+Finish time: 1:30
+Actual time needed to complete: 40 minutes 
+
+# Class Lab 02 
+
+Number and name of feature: Display images with Bootstrap
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 12:45 pm
+
+Finish time: 4:45
+Actual time needed to complete: 2 hours 
+
+# Class Lab 03 
+
+Number and name of feature: Display a Modal
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 12:30 pm
+
+Finish time: 4:30
+Actual time needed to complete: 3 hours
+
+# Class Lab 04 
+
+Number and name of feature: Display Filter by Numbers of Horns
+
+Estimate of time needed to complete: 5 hour 
+
+Start time: 1:00 pm
+
+Finish time: 6
+Actual time needed to complete: 5 hours
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

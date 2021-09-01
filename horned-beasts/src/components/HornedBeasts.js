@@ -8,13 +8,13 @@ class HornedBeasts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numberOfVotes: 0,
+      favorites: 0,
     };
   }
 
-  incrementnumberOfVotes = () => {
+  votes = () => {
     this.setState({
-      numberOfVotes: this.state.numberOfVotes + 1,
+      favorites: this.state.favorites + 1,
     });
   };
   show = () => {
@@ -34,11 +34,11 @@ class HornedBeasts extends React.Component {
           <Card.Img
             variant="top"
             src={this.props.imgSrc}
-            onClick={this.incrementnumberOfVotes}
+            onClick={this.votes}
           />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
-            <Card.Text>❤️ : {this.state.numberOfVotes}</Card.Text>
+            <Card.Text>❤️ : {this.state.favorites}</Card.Text>
             <Card.Text>{this.props.description}</Card.Text>
             <Card.Text>{this.props.horns}</Card.Text>
             <Button variant="primary">Go somewhere</Button>

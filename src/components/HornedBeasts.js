@@ -3,12 +3,18 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Col from "react-bootstrap/Col";
+import Form from "./Form";
 
 class HornedBeasts extends React.Component {
+  updateNumber = (newNum) => {
+    console.log("New Number",newNum);
+  }
+
+
   constructor(props) {
     super(props);
     this.state = {
-      favorites: 0,
+      favorites: 0
     };
   }
 
@@ -22,14 +28,17 @@ class HornedBeasts extends React.Component {
     this.props.selectedBeastsFunction(
       this.props.title,
       this.props.description,
-      this.props.imgSrc
-      ,this.props.horns ,
+      this.props.imgSrc,
+      this.props.horns
     );
   };
 
   render() {
     return (
       <Col>
+        <Card.Header>
+          <Form updateNumber={this.updateNumber} />
+        </Card.Header>
         <Card style={{ width: "18rem" }} onClick={this.show}>
           <Card.Img
             variant="top"

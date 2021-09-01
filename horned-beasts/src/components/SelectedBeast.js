@@ -1,21 +1,29 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
+import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
 class SelectedBeast extends React.Component {
-  render() {console.log(this.props);
+  render() {
     return (
       <div>
-        <Modal show={this.props.show}  >
-          <Modal.Title>{this.props.Title}</Modal.Title>
-          <Modal.Header closeButton></Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal show={this.props.show} onHide={this.props.close}>
+          <Modal.Header>
+            <Modal.Title>{this.props.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src={this.props.imgSrc} />
+              <Card.Body>
+                <Card.Title>{this.props.title}</Card.Title>
+                <Card.Text>{this.props.description}</Card.Text>
+                <Card.Text>{this.props.horns}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary"   >
+            <Button variant="secondary" onClick={this.props.close}>
               Close
-            </Button>
-            <Button variant="primary"     > 
-              Save Changes
             </Button>
           </Modal.Footer>
         </Modal>
@@ -23,4 +31,5 @@ class SelectedBeast extends React.Component {
     );
   }
 }
+
 export default SelectedBeast;

@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Col from "react-bootstrap/Col";
-import Form from "./Form";
 
 class HornedBeasts extends React.Component {
   updateNumber = (newNum) => {
@@ -37,7 +36,7 @@ class HornedBeasts extends React.Component {
     return (
       <Col>
         <Card.Header>
-          <Form updateNumber={this.updateNumber} />
+
         </Card.Header>
         <Card style={{ width: "18rem" }} onClick={this.show}>
           <Card.Img

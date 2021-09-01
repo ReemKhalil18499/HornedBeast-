@@ -14,7 +14,7 @@ class App extends React.Component {
       title: "",
       description: "",
       imgSrc: "",
-      horns:"",
+      horns: "",
     };
   }
 
@@ -31,12 +31,12 @@ class App extends React.Component {
     });
   };
 
-  selectedBeastsFunction = (title, description, imgSrc,horns) => {
+  selectedBeastsFunction = (title, description, imgSrc, horns) => {
     this.setState({
       title: title,
       description: description,
       imgSrc: imgSrc,
-      horns:horns,
+      horns: horns,
     });
 
     console.log(title);

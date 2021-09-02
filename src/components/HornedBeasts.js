@@ -22,8 +22,8 @@ class HornedBeasts extends React.Component {
     this.props.selectedBeastsFunction(
       this.props.title,
       this.props.description,
-      this.props.imgSrc,
-      this.props.horns
+      this.props.imgSrc
+      ,this.props.horns ,
     );
   };
 
@@ -40,6 +40,7 @@ class HornedBeasts extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>❤️ : {this.state.favorites}</Card.Text>
             <Card.Text>{this.props.description}</Card.Text>
+            <Card.Text>{this.props.horns}</Card.Text>
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
         </Card>

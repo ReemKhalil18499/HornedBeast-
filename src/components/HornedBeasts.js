@@ -30,7 +30,7 @@ class HornedBeasts extends React.Component {
   render() {
     return (
       <Col>
-        <Card style={{ width: "18rem" }} onClick={this.handleShow}>
+        <Card style={{ width: "18rem" }} onClick={this.show}>
           <Card.Img
             variant="top"
             src={this.props.imgSrc}

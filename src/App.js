@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -31,6 +31,12 @@ class App extends React.Component {
     });
   };
 
+  filteredDataJason = (item) => {
+    this.setState({
+      data: item,
+    });
+  };
+
   selectedBeastsFunction = (title, description, imgSrc, horns) => {
     this.setState({
       title: title,
@@ -53,9 +59,12 @@ class App extends React.Component {
       <div>
         <Header />
         <Main
-          data={dataJson}
+          // data={dataJson}
           show={this.show}
+          data={this.state.data}
           selectedBeastsFunction={this.selectedBeastsFunction}
+          list={this.list}
+          filteredDataJason={this.filteredDataJason}
         />
         <SelectedBeast
           title={this.state.title}

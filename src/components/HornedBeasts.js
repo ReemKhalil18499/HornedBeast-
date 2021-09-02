@@ -5,15 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Col from "react-bootstrap/Col";
 
 class HornedBeasts extends React.Component {
-  updateNumber = (newNum) => {
-    console.log("New Number",newNum);
-  }
-
-
   constructor(props) {
     super(props);
     this.state = {
-      favorites: 0
+      favorites: 0,
     };
   }
 
@@ -35,10 +30,7 @@ class HornedBeasts extends React.Component {
   render() {
     return (
       <Col>
-        <Card.Header>
-
-        </Card.Header>
-        <Card style={{ width: "18rem" }} onClick={this.show}>
+        <Card style={{ width: "18rem" }} onClick={this.handleShow}>
           <Card.Img
             variant="top"
             src={this.props.imgSrc}
@@ -48,7 +40,6 @@ class HornedBeasts extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>❤️ : {this.state.favorites}</Card.Text>
             <Card.Text>{this.props.description}</Card.Text>
-            <Card.Text>{this.props.horns}</Card.Text>
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
         </Card>

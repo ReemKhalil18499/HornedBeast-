@@ -14,10 +14,9 @@ class Main extends React.Component {
                 title={item.title}
                 imgSrc={item.image_url}
                 description={item.description}
-                horns={item.horns} 
+                horns={item.horns}
                 show={this.props.show}
                 selectedBeastsFunction={this.props.selectedBeastsFunction}
-                
               />
             );
           })}

@@ -3,30 +3,38 @@ import HornedBeasts from "./HornedBeasts";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
-
+import dataJson from "../assets/data.json";
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      NumEntered: "",
+      data: dataJson,
+    };
+  }
+
+  filteredImages = (event) => {
+    let newNum = event.target.value;
+    let Arr = this.state.data;
+    let filtered = Arr.filter((item) => {
+      if (item.horns === newNum) {
+        return item;
+      } else if (0 === newNum) {
+        return item;
+      }
+    });
+
+    this.props.filteredDataJason(filtered);
+  };
+
   render() {
+    console.log(this.props);
     return (
       <main>
-        <Form className="selectForm">
+        <Form filteredImages={this.filteredImages}>
           <Form.Group controlId="exampleForm.SelectCustom">
             <Form.Label>Number Of Horns</Form.Label>
-            <Form.Control as="select" custom onChange={this.selectHandler}>
-              <option>Enter Number Of Horns</option>
-              <option id="1" value="1">
-                one
-              </option>
-              <option id="2" value="2">
-                two
-              </option>
-              <option id="3" value="3">
-                three
-              </option>
-              <option id="100" value="100">
-                HUNDRED !!
-              </option>
-            </Form.Control>
           </Form.Group>
         </Form>
 

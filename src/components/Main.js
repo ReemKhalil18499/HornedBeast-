@@ -2,13 +2,12 @@ import React from "react";
 import HornedBeasts from "./HornedBeasts";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Row from "react-bootstrap/Row";
-import Reem from "./Form";
 
 class Main extends React.Component {
   render() {
     return (
       <main>
-        <Reem />
+        
 
         <Row xs={1} md={3} className="g-4">
           {this.props.data.map((item) => {

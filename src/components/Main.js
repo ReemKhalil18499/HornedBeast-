@@ -7,6 +7,8 @@ class Main extends React.Component {
   render() {
     return (
       <main>
+        
+
         <Row xs={1} md={3} className="g-4">
           {this.props.data.map((item) => {
             return (
@@ -14,10 +16,9 @@ class Main extends React.Component {
                 title={item.title}
                 imgSrc={item.image_url}
                 description={item.description}
-                horns={item.horns} 
+                horns={item.horns}
                 show={this.props.show}
                 selectedBeastsFunction={this.props.selectedBeastsFunction}
-                
               />
             );
           })}

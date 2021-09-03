@@ -22,8 +22,8 @@ class HornedBeasts extends React.Component {
     this.props.selectedBeastsFunction(
       this.props.title,
       this.props.description,
-      this.props.imgSrc
-      ,this.props.horns ,
+      this.props.imgSrc,
+      this.props.horns
     );
   };
 
